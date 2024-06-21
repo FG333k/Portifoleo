@@ -9,7 +9,8 @@ main{
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
     box-shadow: 2.5px 2.5px 7px rgb(17, 17, 17);
-    width: 300px;
+    min-width: 300px;
+    max-width: 700px;
     padding: 30px;
     margin: auto;
     
