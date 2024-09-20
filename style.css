@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
 :root {
+    --cor1: ;
+    
+    --background: #403D39;
 
+    --font1: ;
 }
 
 * {
@@ -9,11 +13,29 @@
     margin: 0px;
 }
 
+.destaque {
+    color: #C20114;
+}
+
 body {
-    background-color: #403D39;
+    background-color: #252422;
     color: #CCC5B9;
 }
 
-.destaque {
-    color: #C20114;
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    & #perfil{
+        display: flex;
+
+        & #resumo {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
 }
