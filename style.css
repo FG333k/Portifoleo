@@ -23,12 +23,25 @@ body {
 }
 
 header {
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
+    border: 1px solid black;
+    overflow: visible;
+    position: fixed;
+    background-color: #252422;
 
     & #perfil{
         display: flex;
+
+        & img {
+            max-width: 149px;
+            margin: 10px ;
+            box-shadow: 1px 1px 15px #C20114;
+            border-radius: 50%;
+        }
 
         & #resumo {
             display: flex;
@@ -36,6 +49,56 @@ header {
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
+            margin-left: 10px;
+
+            & h1 {
+                margin: 20px 0px 10px 0px;
+            }
+
+            & p { /*TROCAR A FONTE*/
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+section {
+
+    padding-top: 187px;
+
+    & h1 {
+        border: 1px solid black;
+        color: #C20114;
+    }
+
+    & .projetos {
+
+        & .plus {
+            display: flex;
+            height: 72.5%;
+            
+
+            & .conteudo {
+                padding: 10px;
+
+                & h2 {
+
+                }
+                & p {
+                    color: #C20114;
+                }
+            }
+
+            & a {
+
+                & img {
+
+                }
+            }
+        }
+
+        & #inversa {
+
         }
     }
 }
