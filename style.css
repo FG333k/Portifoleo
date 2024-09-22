@@ -80,6 +80,8 @@ section#I {
     }
 
     & .projetos {
+        max-width: 790px;
+        margin: 0px auto;
 
         & .plus {
             display: flex;
