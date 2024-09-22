@@ -18,25 +18,23 @@
 }
 
 body {
-    background-color: #252422;
+    background-color: #111110;
     color: #CCC5B9;
 }
 
 header {
-    width: 100%;
+    height: 25vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    border: 1px solid black;
-    overflow: visible;
-    position: fixed;
-    background-color: #252422;
+    background-color: #111110;
 
     & #perfil{
         display: flex;
 
         & img {
+            min-width: 45px;
             max-width: 149px;
             margin: 10px ;
             box-shadow: 1px 1px 15px #C20114;
@@ -57,25 +55,36 @@ header {
 
             & p { /*TROCAR A FONTE*/
                 font-weight: bold;
+                max-width: 400px;
             }
+        }
+    }
+
+    & nav {
+        & a {
+            background-color: white;
+            height: 50px;
+            padding-top: 33px;border-radius: 50%;
+            margin: 0px 0px;
         }
     }
 }
 
-section {
+section#I {
 
-    padding-top: 187px;
 
-    & h1 {
-        border: 1px solid black;
-        color: #C20114;
+    & h1 { /*TROCAR A FONTE E O TAMANHO*/
+        text-align: center;
+        color: #C20114;  
+        margin-top: 60px; 
     }
 
     & .projetos {
 
         & .plus {
             display: flex;
-            height: 72.5%;
+            height: 40vh;
+            margin: 40px 0px;
             
 
             & .conteudo {
@@ -86,19 +95,93 @@ section {
                 }
                 & p {
                     color: #C20114;
+                    max-width:460px;
                 }
             }
 
-            & a {
+            & .site{
 
-                & img {
-
+                & iframe, img {
+                    width: 300px;
+                    height: 225px;
+                    margin: 5px;
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 5px black;   
+                }
+    
+                & a {
+                    width: 100px;
+                    display: block;
+                    margin: auto;
+                    text-align: center;
+                    background-color: #403D39;
+                    color: #CCC5B9;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    padding: 5px 20px;
+                    box-shadow: 1px 1px 5px black;
+                }
+                & a:hover {
+                    background-color: #252422;
+                    color: #C20114;
+                    text-shadow: #403D39;
                 }
             }
         }
 
         & #inversa {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+}
+section#II{
 
+    & .janela {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 50%;
+        height: 100%;
+    }
+    & #espedicao {
+        background-image: url(image/Clone.png);
+    }
+    & #percurso {
+        background-image: url(image/Clone.png);
+    }
+    & #jornada {
+        background-image: url(image/Clone.png);
+    }
+
+    & .histo{
+        margin: 150px 10px;
+
+        & h2 {
+
+        }
+        & p {
+
+        }
+    }
+}
+
+footer {
+    margin: auto;
+    background-color: #252422;
+
+    & p {
+        text-align: center;
+        text-shadow: 1px 1px 5px black;
+
+        & a {
+            color: #C20114;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        & a:hover {
+            text-shadow: 1px 1px 5px #C20114;
         }
     }
 }
